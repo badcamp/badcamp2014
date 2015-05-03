@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- Sorry no IE7 support! -->
+<!-- @see http://foundation.zurb.com/docs/#basicHTMLMarkup -->
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from badcamp-2014/session/drupal-8-multilingual-hands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2015 22:13:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" />
+<meta property="og:site_name" content="BADCAMP 2014" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="index.html" />
+<meta name="twitter:url" content="index.html" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="../../sites/default/files/badcamp-logo%20(1)/index.png" />
+<link rel="shortlink" href="index.html" />
+<link rel="canonical" href="index.html" />
+<meta property="og:title" content="Drupal 8 multilingual hands-on" />
+<meta name="description" content="This 2 hour lab aims to provide a hands-on way showing you around all the great improvements and gives tips as to how to best utilize the new solutions. We will also talk about where contributed modules will still be needed." />
+<meta property="og:description" content="This 2 hour lab aims to provide a hands-on way showing you around all the great improvements and gives tips as to how to best utilize the new solutions. We will also talk about where contributed modules will still be needed." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Drupal 8 multilingual hands-on" />
+<meta name="twitter:description" content="This 2 hour lab aims to provide a hands-on way showing you around all the great improvements and gives tips as to how to best utilize the new solutions. We will also talk about where contributed modules will still be needed." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Drupal 8 multilingual hands-on | BADCAMP 2014</title>
+  <link rel="stylesheet" href="../../sites/default/files/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw/index.css" />
+<link rel="stylesheet" href="../../sites/default/files/css/css_4NGYH06BlBkljRlpDchQtbVIcru21-Uv4lqsfEyVwv4/index.css" />
+<link rel="stylesheet" href="../../sites/default/files/css/css_UijoYCGYdJSB5IGUTAmZFO-scCehvF3oDuGCkmOBQ8M/index.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Press+Start+2P&amp;subset=latin&amp;nnovfs" />
+<link rel="stylesheet" href="../../sites/default/files/css/css_CdI3IkuVPlHsKaPY_Cb-Y2pmuYLgvVFMwl8tYO4cUvE/index.css" />
+  <script src="../../sites/all/libraries/modernizr/modernizr.custom.08545/index.js?nnovfs"></script>
+<script src="../../sites/default/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o/index.js"></script>
+<script src="../../sites/default/files/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc/index.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-54142121-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="../../sites/default/files/js/js_mvw0r4qO_U4KO2t9BoZFWr_71gzeViSa1TUTxC1uTac/index.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"badcamp","theme_token":"vR5bgkmlcSUAmy_E6Qhbj0ciFmuqwCrdQPoP8qDN48w","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"\/\/fonts.googleapis.com\/css?family=Press+Start+2P\u0026subset=latin":1,"sites\/all\/themes\/zurb_foundation\/css\/normalize.css":1,"sites\/all\/themes\/badcamp\/css\/foundation.min.css":1,"sites\/all\/themes\/badcamp\/css\/badcamp.css":1,"sites\/all\/themes\/badcamp\/css\/loginoverlay.css":1,"sites\/all\/themes\/badcamp\/css\/animation.css":1},"js":{"sites\/all\/modules\/contrib\/picture\/picturefill\/matchmedia.js":1,"sites\/all\/modules\/contrib\/picture\/picturefill\/picturefill.js":1,"sites\/all\/modules\/contrib\/picture\/picture.js":1,"sites\/all\/themes\/badcamp\/js\/vendor\/classie.js":1,"sites\/all\/themes\/badcamp\/js\/vendor\/loginoverlay.js":1,"sites\/all\/libraries\/modernizr\/modernizr.custom.08545.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/badcamp\/js\/vendor\/modernizr.js":1,"sites\/all\/themes\/badcamp\/js\/foundation.min.js":1,"sites\/all\/themes\/badcamp\/js\/scripts.js":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});</script>
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-263 node-type-session section-session" >
+  <div class="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!--.page -->
+<div role="document" class="page">
+
+  <!--.l-header region -->
+  <header role="banner" class="l-header">
+
+          <!--.top-bar -->
+            <div class="contain-to-grid sticky">
+              <nav class="top-bar" data-topbar  data-options="">
+          <ul class="title-area">
+            <li class="name"><h1><a href="../../index/" rel="home" title="BADCAMP 2014 Home">BADCAMP 2014</a></h1></li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+                          <ul id="main-menu" class="main-nav left"><li class="first leaf"><a href="../../details/">Details</a></li><li class="leaf"><a href="../../location/">Location</a></li><li class="leaf"><a href="../../community/#attendees-pager">Community</a></li><li class="last leaf" title="Submit and view sessions"><a href="../../sessions/" title="Submit and view sessions">Sessions</a></li></ul>                                  </section>
+        </nav>
+            </div>
+            <!--/.top-bar -->
+    
+    <!-- Title, slogan and menu -->
+        <!-- End title, slogan and menu -->
+
+    
+  </header>
+  <!--/.l-header -->
+
+  
+  
+  
+  <main role="main" class="row l-main">
+
+    <div class="large-12 main columns">
+      
+      <a id="main-content"></a>
+
+      <div class='breadcrumb-wrapper'><h2 class="element-invisible">You are here</h2><ul class="breadcrumbs"><li><a href="../../index/">Home</a></li><li class="current"><a href="#">Drupal 8 multilingual hands-on</a></li></ul></div>
+
+                      <h1 id="page-title" class="title">Drupal 8 multilingual hands-on</h1>
+              
+                            
+      
+        <div id="block-system-main" class="block block-system block-system-main">
+
+  <header>
+              </header>
+
+  <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-entity-field pane-node-field-session-speaker"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-session-speaker field-type-entityreference field-label-inline clearfix field-wrapper"><div  class="field-label">Session Speaker(s):&nbsp;</div><a href="../../users/aimee-degnan/">Aimee Degnan</a><a href="../../users/kristen-pol/">Kristen Pol</a></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-field-session-track"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-session-track field-type-taxonomy-term-reference field-label-hidden field-wrapper clearfix"><ul class="links"><li class="taxonomy-term-reference-0" class="field-item even"><a href="../../sessions/" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Site Building + Using Drupal</a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-field-session-date-and-time no-padding"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-session-date-and-time field-type-datetime field-label-hidden field-wrapper"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2014-11-09T14:30:00-08:00">Sunday, November 9 2014</span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1"  >
+  
+      
+  
+  <div class="pane-content">
+    Room: START <br />
+Time: 2:30 pm - 4:30pm  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-body white"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="body field"><p>Over a thousand people participated in the issues around improving multilingual features and APIs in Drupal 8 for the past three years. There are around a thousand issues, most of which are resolved in this initiative as of this submission making Drupal 8 a truly outstanding release for everybody looking to create even single language non-English sites but especially those making multilingual sites. Although there will surely be contributed modules useful to round out multilingual sites in Drupal 8, there is support for way more than there was in Drupal 7 core and even if you add in all available contributed modules - and with less code and more unified approaches.</p>
+<p>This 2 hour lab aims to provide a hands-on way showing you around all the great improvements and gives tips as to how to best utilize the new solutions. We will also talk about where contributed modules will still be needed. </p>
+<p>The ideal attendee at this session has some experience in Drupal 6 or 7 foreign language and/or multilingual site building, however those who have no experience in foreign/multilingual site building will also get a lot out of it. </p>
+<p>Want to be involved in this project? See <a>http://hojtsy.hu/multilingual-drupal8 for an article series on the details on what we accomplished. </a><a href="http://www.drupal8multilingual.org/">http://www.drupal8multilingual.org/</a> is our initiative home and we have meetings every Wednesday to discuss and move current efforts forward (see times on the front page). </p>
+<p><strong>Preparing for this lab:</strong> Coming soon. We are working on providing cloud based environments to the class to speed the ramp up process for the lab. </p>
+<p><strong>Supporting Documents:</strong> </p>
+<ul><li><a href="http://bit.ly/d8ml-lab-handout">Step-by-step Hand Out</a></li>
+<li><a href="https://docs.google.com/a/hook42.com/presentation/d/1rHtwt3O_QWvd0d1kETp7vULDm7P8ksjh4dCJwuY0c4A/edit#slide=id.g4345207a3_028">Slides</a></li>
+</ul><p> </p></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 marquee-title"  >
+  
+      
+  
+  <div class="pane-content">
+    <marquee class='marquee' data-duration='5000' data-gap='10' data-dupilcated='true' >ALPHA BADCamp SPONSORS</marquee>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-sponsors-panel-pane-2 white sponsor"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-sponsors view-id-sponsors view-display-id-panel_pane_2 view-dom-id-55e7a0ded83d18b386a2150ed9f37003">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-sponsor-logo">        <div class="field-content"><a href="../../sponsor/acquia/"><img typeof="foaf:Image" src="../../sites/default/files/styles/alpha-sponsor/public/sponsor-logos/acquia_RGB%20copy/index.jpg?itok=Msa7PsVQ" width="400" height="83" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-field-sponsor-logo">        <div class="field-content"><a href="../../sponsor/pantheon/"><img typeof="foaf:Image" src="../../sites/default/files/styles/alpha-sponsor/public/sponsor-logos/pantheon-logo-2013/index.png?itok=l5cWUcrl" width="400" height="132" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <span></span>    </div>
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+    </div>
+    <!--/.main region -->
+
+    
+      </main>
+  <!--/.main-->
+
+  
+  
+  <!--.l-footer-->
+  <footer class="l-footer" role="contentinfo">
+    <div class="row">
+          <div class="footer large-12 columns">
+          <div id="block-block-2" class="block block-block block-block-2">
+
+  <header>
+              </header>
+
+  <div class='follow-us-footer'>
+<div class="social-link-wrapper">
+<span class='follow'>Follow</span>
+<ul class='social-links'>
+<li><a  target="_blank" class='twitter' href="https://twitter.com/BADCamp">BADCamp</a></li>
+<li><a target="_blank" class='twitter-hash' href="https://twitter.com/hashtag/badcamp">#BADCamp</a></li>
+</ul>
+</div>
+<div class='footer-side-links'>
+<a href="../../credits/">Credits</a>
+<a href="../../contact/">Contact</a>
+</div>
+</div></div>
+<div id="block-menu-menu-footer" class="block block-menu block-menu-menu-footer">
+
+  <header>
+              <h2 class="block-title">Footer</h2>
+          </header>
+
+  <ul class="menu"><li class="first expanded"><a href="../../index/">BADCamp 2014</a><ul class="menu"><li class="first leaf"><a href="../../sponsors/">Sponsors</a></li>
+<li class="last leaf"><a href="../../individual-sponsor/" title="Sponsor Badcamp">Individual Sponsorship</a></li>
+</ul></li>
+<li class="expanded"><a href="../../details/">Details</a><ul class="menu"><li class="first leaf"><a href="../../details/#timeline">BADCamp Timeline</a></li>
+<li class="leaf"><a href="../../food-and-drink/">Food and Drink</a></li>
+<li class="last leaf"><a href="../../jobs/" title="Job Board">Job Board</a></li>
+</ul></li>
+<li class="expanded"><a href="../../location/">Location</a><ul class="menu"><li class="first leaf"><a href="../../get-around/">Get Around</a></li>
+<li class="leaf"><a href="../../event/pantheon-saturday-evening-party/">Saturday Night Party</a></li>
+<li class="last leaf"><a href="../../lodging/">Hotel Info</a></li>
+</ul></li>
+<li class="last expanded"><a href="../../community/">Community</a><ul class="menu"><li class="first leaf"><a href="../../community/#all-attendees">All attendees</a></li>
+<li class="leaf"><a href="../../details/#featured-attendees">Featured Attendees</a></li>
+<li class="last leaf"><a href="../../code-of-conduct/">Code of Conduct</a></li>
+</ul></li>
+</ul></div>
+      </div>
+    
+          <div class="copyright large-12 columns">
+        &copy; CC-BY-SA 2015 BADCAMP 2014 Some rights reserved.      </div>
+        </div>
+  </footer>
+  <!--/.footer-->
+
+  </div>
+<!--/.page -->
+
+         <div class="overlay overlay-door">
+            <div id="block-user-login" class="block block-user block-user-login">
+
+  <header>
+              <h2 class="block-title">User login</h2>
+          </header>
+
+  <form action="http://badcamp-2014/session/drupal-8-multilingual-hands?destination=node/263" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first last"><a href="../../user/password/" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-v5bBPub1R0JJ5-dsP6iv1dZ_ln_edJczdzV6KPRbUps" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<button class="secondary button radius form-submit" id="edit-submit" name="op" value="Log in" type="submit">Log in</button>
+</div></form></div>
+<div id="block-block-1" class="block block-block block-block-1">
+
+  <header>
+              </header>
+
+  <button type="button" class="overlay-close">Close</button></div>
+        </div>
+        <script src="../../sites/default/files/js/js_h5pUc2x9Uh8Pl1QqK1Xj-8G295EapUWRnbPNEp5xuvA/index.js"></script>
+<script src="../../sites/default/files/js/js_kkFzlcy2IfIV0rPOzUg6XQLmRgf-xtz17YPN5hit_oY/index.js"></script>
+    <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script>
+</body>
+
+<!-- Mirrored from badcamp-2014/session/drupal-8-multilingual-hands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2015 22:13:24 GMT -->
+</html>
